@@ -1,0 +1,118 @@
+body{
+  background-color: #CDBBA7;
+}
+
+.firstheading
+{
+  font-family: 'PT Serif', serif;
+  text-align: center;
+  font-size: 3rem;
+  padding: 2%;
+}
+.card
+{
+  background-color:#DAD0C2 ;
+  text-align: center;
+}
+p
+{
+  font-family: 'PT Serif', serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 2%;
+  font-size: 1rem;
+
+}
+.navbar
+{
+  padding: 2rem 0 4.5rem;
+
+}
+.navbar-brand
+{
+  font-family: "ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: black;
+  padding-left: 1%;
+}
+.nav-link
+{
+    color: black;
+    font-size: 1.2rem;
+    font-family: "Montserrat-Light";
+    font-weight: bolder;
+  }
+}
+.nav-item
+{
+  padding: 0 20px;
+}
+.click
+{
+  text-align: center;
+  padding:3% 3%;
+}
+#inputsection
+{
+
+padding: 2% 2% 2% 2%;
+}
+.chk
+{
+  font-size: 1.5rem;
+  padding:2.5% 2.5% 2.5% 2.5%;
+  text-align: left;
+}
+.cb
+{
+  font-size: 1.5rem;
+  padding:2.5% 2.5% 2.5% 2.5%;
+  text-align: right;
+}
+
+.form-select
+{
+  position: relative;
+  display: inline-block;
+}
+.chars{
+  font-style: italic;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+.gen
+{
+  padding: 3% 3% 3% 3%;
+  text-align: center;
+}
+.pass
+{  padding: 3% 3% 3% 3%;
+    text-align: center;
+}
+
+input[type=text] {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+.result-container
+{
+  box-sizing: inherit;
+  background-color: #DAD0C2;
+	font-size: 18px;
+	letter-spacing: 5px;
+	padding: 12px 10px;
+	height: 50px;
+	width: 30%;
+  margin-left: 35%;
+  text-align: center;
+
+}

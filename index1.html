@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- fontawesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
+
+    <!-- bootstrap scripts -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- CSS script -->
+    <link rel="stylesheet" href="C:\Users\admin\Desktop\Web Development\passwordgenerator\styles.css">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Secure password generator</title>
+    <link rel="icon" href="padlock.png">
+
+  </head>
+  <body>
+    <!-- <h1 class="firstheading">Make quick secure passwords</h1> -->
+
+    <section id="navigation">
+      <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="">Password Generator</a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynavbar" aria-controls="mynavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="#mynavbar">
+      <ul class="navbar-nav" style="margin-left:auto;">
+          <li class="nav-item">
+              <a class="nav-link" href="#info">Information</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#inputsection">Generator</a>
+          </li>
+
+      </ul>
+   </div>
+  </nav>
+  </div>
+
+    </section>
+
+
+    <section id="info">
+
+
+    <div class="row">
+      <div class="instapass col-lg-6 col-sm-12">
+        <div class="card">
+          <h2 class="card-header"> Social networking sites</h2>
+          <div class="card-body">
+                          <p class="insta">Password should have more than 6 characters. </p>
+                          <p class="insta">Should contain numbers and special symbols.</p>
+                          <p class="insta">You cannot use any other password you've used before.</p>
+                          <p class="insta">Shouldn’t contain memorable keyboard paths.</p>
+        </div>
+      </div>
+  </div>
+      <div class="bank col-lg-6  col-sm-12">
+        <div class="card">
+          <h2 class="card-header">Banking</h2>
+          <div class="card-body">
+  <p class="bnk">Should be atleast 10 charcters long</p>
+  <p class="bnk">Should not based on your personal information.</p>
+  <p class="bnk">Use different passwords for each account.</p>
+  <p class="bnk">Should not based on your personal information.</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+    </section>
+
+  <section id="inputsection">
+
+      <h1 class="click">Select your password specifications</h1>
+      <!-- Checkbox -->
+      <div class="row">
+
+<div class="col-lg-6 col-md-12 col-sm-12">
+
+      <label class="chk" for="lowercase">Include lowercase Characters <span class="chars">(a,b,c,d)</span>:-</label>
+      <input type="checkbox" id="lowercase" checked  >
+    </div>
+
+<div class="col-lg-6 col-md-12 col-sm-12">
+      <label class="cb" for="uppercase">Include Uppercase Characters <span class="chars">(A,B,C,D)</span>:-</label>
+      <input  type="checkbox" id="uppercase" checked  >
+    </div>
+  </div>
+
+      <div class="row">
+<div class="col-lg-6 col-md-12 col-sm-12">
+      <label class="chk" for="numbers">Include Numbers <span class="chars">(1,2,3,4)</span>:-</label>
+      <input   type="checkbox" id="numbers" checked  >
+</div>
+
+<div class="col-lg-6 col-md-12 col-sm-12">
+      <label class="cb" for="special">Include Special Symbols <span class="chars">(#,@,$,&)</span>:-</label>
+      <input   type="checkbox" id="symbols" checked >
+    </div>
+
+
+<div class="col-lg-6 col-md-12 col-sm-12">
+<label class="chk">Length of the Password:-</label>
+
+<select onchange="noofcharacters();" id="number" class="form-select col-lg-4 col-md-4 col-sm-4" aria-label="Default select example">
+    <option value="0">No of characters</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option selected value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+    <option value="13">13</option>
+    <option value="14">14</option>
+    <option value="15">15</option>
+    <option value="16">16</option>
+
+  </select>
+</div>
+<!-- <div class="col-lg-6 col-sm-12">
+      <label class="cb" for="repeated">Exclude Repeated Characters <span class="chars">(a,a,B,B)</span>:-</label>
+      <input   type="checkbox" id="repeated" checked >
+    </div>
+</div> -->
+
+<div class="pass">
+    <h3 >Your Password :-</h3>
+</div>
+<div class="result-container">
+<span id="result"></span>
+</div>
+
+<div class="gen">
+      <button type="button" id="generate" class="btn btn-dark btn-lg">Generate</button>
+
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+      <script src="C:\Users\admin\Desktop\Web Development\passwordgenerator\index.js" charset="utf-8"></script>
+  </body>
+  
